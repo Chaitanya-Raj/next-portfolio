@@ -53,7 +53,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      class="flex flex-col min-h-[calc(100vh-32px)] space-y-20 my-16 py-4"
+      className="flex flex-col min-h-[calc(100vh-32px)] space-y-20 my-16 py-4"
     >
       {projects.map((project) => (
         <Project key={project.name} project={project} />

@@ -14,6 +14,11 @@ export default function Document() {
           content="HTML, CSS, JavaScript, webdev, react, vue, nuxt, next, nuxtjs, nextjs"
         />
         <meta name="author" content="Chaitanya" />
+        <link
+          rel="icon"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/favicon.ico`}
+          type="image/x-icon"
+        />
       </Head>
       <body>
         <Main />

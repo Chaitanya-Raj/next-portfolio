@@ -2,21 +2,23 @@ export default function About() {
   return (
     <section
       id="about"
-      class="m-4 space-x-4 bg-gradient-to-r from-white to-transparent items-center justify-start lg:px-32 md:px-10 px-4 py-4 min-h-[calc(100vh-32px)] lg:flex-row flex flex-col my-8 space-y-10 lg:space-x-10"
+      className="m-4 space-x-4 bg-gradient-to-r from-white to-transparent items-center justify-start lg:px-32 md:px-10 px-4 py-4 min-h-[calc(100vh-32px)] lg:flex-row flex flex-col my-8 space-y-10 lg:space-x-10"
     >
       {/* <!-- TODO: Find a better image -->
     <!-- TODO: Write an interesting bio --> */}
 
-      <div class="flex items-center justify-center relative">
+      <div className="flex items-center justify-center relative">
         <img
-          src="/images/headshot.webp"
+          src={`${
+            process.env.NEXT_PUBLIC_BASE_PATH || ""
+          }/images/headshot.webp`}
           alt="Headshot of Chaitanya Raj"
-          class="shadow-lg"
+          className="shadow-lg"
         />
       </div>
-      <div class="flex flex-col space-y-5 max-w-[800px]">
-        <h2 class="font-display text-5xl">Who Am I?</h2>
-        <div class="font-body md:text-xl flex flex-col space-y-4">
+      <div className="flex flex-col space-y-5 max-w-[800px]">
+        <h2 className="font-display text-5xl">Who Am I?</h2>
+        <div className="font-body md:text-xl flex flex-col space-y-4">
           <p>
             Hi, I’m Chaitanya. I’m a web developer from New Delhi and a CS
             alumni of the University of Delhi. I have experience with front-end
@@ -30,7 +32,7 @@ export default function About() {
               href="https://lichess.org/@/ChaitanyaRaj"
               target="_blank"
               rel="noopener noreferrer"
-              class="highlight"
+              className="highlight"
             >
               Chess
             </a>{" "}
@@ -39,7 +41,7 @@ export default function About() {
               href="https://www.goodreads.com/user/show/97716082-chaitanya"
               target="_blank"
               rel="noopener noreferrer"
-              class="highlight"
+              className="highlight"
             >
               reading any books
             </a>{" "}
@@ -52,7 +54,7 @@ export default function About() {
               href="https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO"
               target="_blank"
               rel="noopener noreferrer"
-              class="highlight"
+              className="highlight"
             >
               keshi
             </a>
