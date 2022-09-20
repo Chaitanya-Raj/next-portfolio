@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Project({ project }) {
   return (
     <div class="lg:flex-row lg:px-32 lg:space-x-10 md:px-10 flex flex-col px-4 m-4 space-y-8 even:flex-col lg:even:flex-row-reverse lg:even:space-x-reverse">
